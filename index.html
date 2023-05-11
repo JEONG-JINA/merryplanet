@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0, user-scalable=yes">
+    <title>메리플래닛</title>
+    <link href="/img/favicon.ico" rel="shortcut icon">
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/min_style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- slick -->
+    <link href="/plugin/slick/slick-theme.css" rel="stylesheet">
+    <link href="/plugin/slick/slick.css" rel="stylesheet">
+    <script src="/plugin/slick/slick.min.js"></script>
+    <!-- aos -->
+    <link href="/plugin/aos/aos.css" rel="stylesheet">
+    <script src="/plugin/aos/aos.js"></script>
+    <!-- nicescroll -->
+    <script src="/plugin/nicescroll/jquery.nicescroll.js"></script>
+    <!-- tween max -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js'></script>
+    <!-- font -->
+    <link href="https://webfontworld.github.io/pretendard/Pretendard.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="wrap">
+        <!-- 헤더 -->
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <a href="/index.html">
+                        <img src="/img/logo_merryplanet_200.png" alt="로고" class="color">
+                        <img src="/img/logo_white.png" alt="로고" class="white">
+                    </a>
+                </div>
+                <ul class="ps_nav">
+                    <li>
+                        <a href="#">
+                            <img src="/img/search.png" alt="검색" class="color">
+                            <img src="/img/search_white.png" alt="검색" class="white">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="/img/user.png" alt="마이페이지" class="color">
+                            <img src="/img/user_white.png" alt="마이페이지" class="white">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="/img/order.png" alt="주문내역" class="color">
+                            <img src="/img/order_white.png" alt="주문내역" class="white">
+                        </a>
+                    </li>
+                </ul>
+                <button type="button" class="ham-btn" aria-label="메뉴">
+                    <span class="bar bar1"></span>
+                    <span class="bar bar2"></span>
+                    <span class="bar bar3"></span>
+                </button>
+            </div>
+        </header>
+        <!-- 메뉴 -->
+        <nav>
+            <ul class="gnb">
+                <li>
+                    <a href="#">BRAND</a>
+                </li>
+                <li>
+                    <a href="#">PRODUCT</a>
+                </li>
+                <li>
+                    <a href="#">EVENT</a>
+                </li>
+                <li>
+                    <a href="#">REVIEW</a>
+                </li>
+                <li>
+                    <a href="#">NOTICE</a>
+                </li>
+                <li>
+                    <a href="#">Q&A</a>
+                </li>
+            </ul>
+            <ul class="ps_nav">
+                <li>
+                    <a href="#">로그인</a>
+                </li>
+                <li>
+                    <a href="#">마이페이지</a>
+                </li>
+                <li>
+                    <a href="#">주문내역</a>
+                </li>
+            </ul>
+        </nav>
+        <main id="contents">
+            <!-- 메인 -->
+            <section class="main-visual">
+                <div class="vd">
+                    <video src="/img/merryplanet(1080p).mp4" loop autoplay muted class="pc"></video>
+                    <video src="/img/m_merryplanet(1080p).mp4" loop autoplay muted class="mo"></video>
+                </div>
+                <div class="txt">
+                    <h1>피부 본연의 건강함을 찾아<br>자연과 함께 떠나는 여행</h1>
+                </div>
+                <div class="scrMotion">
+                    <span></span>
+                </div>
+            </section>
+            <!-- brand -->
+            <section class="section-brand">
+                <div class="container">
+                    <ul class="content">
+                        <li class="cont cont1">
+                            <img src="/img/brand01.jpg" alt="vegan"  data-aos="fade-up" data-aos-duration="1500">
+                            <div class="brand_txt"  data-aos="fade-up" data-aos-duration="1500">
+                                <h3>Vegan</h3>
+                                <p>
+                                    메리 플래닛은 국내 공인 인증기관에서<br>
+                                    제품에 대한 철저한 검증을 통해<br>
+                                    <b>비건 인증</b>을 받은 솔루션입니다.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="cont cont2">
+                            <img src="/img/brand02.jpg" alt="stability"  data-aos="fade-up" data-aos-duration="1500">
+                            <div class="brand_txt"  data-aos="fade-up" data-aos-duration="1500">
+                                <h3>Stability</h3>
+                                <p>
+                                    메리 플래닛은 공인 임상 기관의<br>
+                                    인체적용시험에 관한 <b>안정성 평가와<br>
+                                    유효성 평가</b>를 완료한 솔루션입니다.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="cont cont3">
+                            <img src="/img/brand03.jpg" alt="eco-friendly"  data-aos="fade-up" data-aos-duration="1500">
+                            <div class="brand_txt"  data-aos="fade-up" data-aos-duration="1500">
+                                <h3>Eco-friendly</h3>
+                                <p>
+                                    메리 플래닛의 제품 상자는 미생물에 의해<br>
+                                    최단시간 자연분해되는 <b>100% 친환경<br>
+                                    사탕수수 제지</b>로 생산되었습니다.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- product -->
+            <section class="section-product">
+                <div class="container">
+                    <div class="sec_title">
+                        <h2>Mellow Skincare</h2>
+                    </div>
+                    <ul class="tag">
+                        <li>#비건</li>
+                        <li>#약산성 EWG 그린</li>
+                        <li>#LHA 솔루션</li>
+                        <li>#피부 진정</li>
+                        <li>#피부 장벽 강화</li>
+                        <li>#저자극</li>
+                    </ul>
+                    <ul class="content">
+                        <li class="cont cont1">
+                            <a href="#">
+                                <div class="product_image">
+                                    <img src="/img/product-1.jpg" alt="제품이미지">
+                                    <img src="/img/product_hover-1.png" alt="제품이미지">
+                                </div>
+                                <div class="product_txt">
+                                    <h3>멜로우 클렌징 폼</h3>
+                                    <p>문제성 피부를 위한<br>약산성 클렌징</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="cont cont2">
+                            <a href="#">
+                                <div class="product_image">
+                                    <img src="/img/product-2.jpg" alt="제품이미지">
+                                    <img src="/img/product_hover-2.png" alt="제품이미지">
+                                </div>
+                                <div class="product_txt">
+                                    <h3>멜로우 토너</h3>
+                                    <p>자연의 건강함을 담은<br>약산성 보습 토너</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="cont cont3">
+                            <a href="#">
+                                <div class="product_image">
+                                    <img src="/img/product-3.jpg" alt="제품이미지">
+                                    <img src="/img/product_hover-3.png" alt="제품이미지">
+                                </div>
+                                <div class="product_txt">
+                                    <h3>멜로우 에센스</h3>
+                                    <p>자연의 에너지를 담은<br>약산성 고농축 에센스</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="cont cont4">
+                            <a href="#">
+                                <div class="product_image">
+                                    <img src="/img/product-4.jpg" alt="제품이미지">
+                                    <img src="/img/product_hover-4.png" alt="제품이미지">
+                                </div>
+                                <div class="product_txt">
+                                    <h3>멜로우 크림</h3>
+                                    <p>자연의 생생함을 담은<br>약산성 고영양 크림</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- special -->
+            <section class="section-special">
+                <div class="container">
+                    <div class="sec_title">
+                        <h2>Special Package</h2>
+                    </div>
+                    <div class="content">
+                        <div class="cont cont1">
+                            <div class="special_txt">
+                                <h3>
+                                    멜로우 4종 스킨케어<br>
+                                    <span>( 클렌징폼 / 토너 / 에센스 / 크림 )</span>
+                                </h3>
+                                <p>
+                                    자연의 에너지를 담은 스킨케어<br>
+                                    손상된 피부의 진정 및 피부 장벽 강화<br>
+                                    저자극 LHA 솔루션
+                                </p>
+                                <a href="#" class="btn">
+                                    <span class="first">M</span><span class="first">O</span><span class="first">R</span><span class="first">E</span> 
+                                    <span class="second">V</span><span class="second">I</span><span class="second">E</span><span class="second">W</span>
+                                    <div class="backgroundHover"></div>
+                                </a>
+                            </div>
+                            <img src="/img/special_skin4set.jpg" alt="멜로우4종스킨케어" class="special_image">
+                        </div>
+                        <div class="cont cont2">
+                            <div class="special_txt">
+                                <h3>
+                                    티 기프트 세트<br>
+                                    <span>( 티 본품 2ea / 텀블러 )</span>
+                                </h3>
+                                <p>
+                                    자연 그대로의 원료 데일리 차<br>
+                                    단호박의 달달함 온 가족 건강 티 <b>더블루이티</b><br>
+                                    발아보리를 담은 깔끔한 마무리를 돕는 데일리 티 <b>더블루이티</b>
+                                </p>
+                                <a href="#" class="btn">
+                                    <span class="first">M</span><span class="first">O</span><span class="first">R</span><span class="first">E</span> 
+                                    <span class="second">V</span><span class="second">I</span><span class="second">E</span><span class="second">W</span>
+                                    <div class="backgroundHover"></div>
+                                </a>
+                            </div>
+                            <img src="/img/special_teaset.jpg" alt="티기프트세트" class="special_image">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- review -->
+            <section class="section-review">
+                <div class="container">
+                    <div class="sec_title">
+                        <h2>Review</h2>
+                    </div>
+                    <ul class="content">
+                        <li class="cont cont1">
+                            <a href="#">
+                                <div class="thumbnail">
+                                    <img src="/img/review01.jpg" alt="리뷰썸네일1">
+                                </div>
+                                <div class="txt">
+                                    <p>되게 고소하고 맛있네요 쌉살한 맛이 안나서 좋아요 ㅎㅎ</p>
+                                    <span class="name">김**</span>
+                                </div>
+                            </a>
+                            <a href="#" class="prd float">
+                                <img src="/img/extraSmall_milkHolding.jpg" alt="merry planet 밀크홀딩티(2.5g*25티백)">
+                                <p>merry planet 밀크홀딩티(2.5g*25티백)</p>
+                            </a>
+                        </li>
+                        <li class="cont cont2">
+                            <a href="#">
+                                <div class="thumbnail">
+                                    <img src="/img/review02.jpg" alt="리뷰썸네일2">
+                                </div>
+                                <div class="txt">
+                                    <p>미쳐써여 원래여드름 빨갛게 많았는데 이제 깨끗해짐 빨리 모공아 줄어들어라 열심히 쓰고있어여</p>
+                                    <span class="name">장**</span>
+                                </div>
+                            </a>
+                            <a href="#" class="prd float">
+                                <img src="/img/extraSmall_lhaEssence.jpg" alt="메리플래닛 멜로우 비건 LHA 에센스(70ml)">
+                                <p>메리플래닛 멜로우 비건 LHA 에센스(70ml)</p>
+                            </a>
+                        </li>
+                        <li class="cont cont3">
+                            <a href="#">
+                                <div class="thumbnail">
+                                    <img src="/img/review03.jpg" alt="리뷰썸네일3">
+                                </div>
+                                <div class="txt">
+                                    <p>
+                                        초등아이들하고 같이 쓰려고 좋은성분 화장품 검색하다가 세트로 사서 쓰고있어요. 먼저 크림부터 다썼네요~~
+                                        꾸덕한 무거운 느낌이 아니라 아이들도 좋아하고 제가 데일리에 쓰기좋아요~
+                                        큰아이 뾰루지도 잡히는것같고 좋아서 재구매하려구요~가족화장품으로 추천합니다!
+                                    </p>
+                                    <span class="name">계**</span>
+                                </div>
+                            </a>
+                            <a href="#" class="prd float">
+                                <img src="/img/extraSmall_lhaCream.jpg" alt="메리플래닛 멜로우 비건 LHA 크림(80ml)">
+                                <p>메리플래닛 멜로우 비건 LHA 크림(80ml)</p>
+                            </a>
+                        </li>
+                        <li class="cont cont4">
+                            <a href="#">
+                                <div class="thumbnail">
+                                    <img src="/img/review04.jpg" alt="리뷰썸네일4">
+                                </div>
+                                <div class="txt">
+                                    <p>트러블이 심해서 이것저것 많이 바르지 못하고 토너랑 에센스만 사용했는데 깨끗해지고 있어요 ㅠㅠ</p>
+                                    <span class="name">임**</span>
+                                </div>
+                            </a>
+                            <a href="#" class="prd float">
+                                <img src="/img/extraSmall_lhaEssence.jpg" alt="메리플래닛 멜로우 비건 LHA 에센스(70ml)">
+                                <p>메리플래닛 멜로우 비건 LHA 에센스(70ml)</p>
+                            </a>
+                        </li>
+                        <li class="cont cont5">
+                            <a href="#">
+                                <div class="thumbnail">
+                                    <img src="/img/review05.jpg" alt="리뷰썸네일5">
+                                </div>
+                                <div class="txt">
+                                    <p>피부가 좋아지는건 모르겠지만 자극은 없어요</p>
+                                    <span class="name">네이버페이</span>
+                                </div>
+                            </a>
+                            <a href="#" class="prd float">
+                                <img src="/img/extraSmall_3step.jpg" alt="메리플래닛 멜로우 3스텝 LHA 솔루션(클렌징폼/토너/에센스)">
+                                <p>메리플래닛 멜로우 3스텝 LHA 솔루션(클렌징폼/토너/에센스)</p>
+                            </a>
+                        </li>
+                        <li class="cont cont6">
+                            <a href="#">
+                                <div class="thumbnail">
+                                    <img src="/img/review06.jpg" alt="리뷰썸네일6">
+                                </div>
+                                <div class="txt">
+                                    <p>
+                                        임신하면서 기초제품 싹 바꿨는데 순하고 저자극이면 좀 세정력이나 흡수력 이런게 좀 부족할거라고 생각했는데..
+                                        너어무너어무 좋아요 ㅋㅋ폼 세정력도 좋고 기초제품도 좋아요!
+                                        일단 향이 없으니까 최고내용
+                                    </p>
+                                    <span class="name">네이버페이</span>
+                                </div>
+                            </a>
+                            <a href="#" class="prd float">
+                                <img src="/img/extraSmall_4.jpg" alt="메리플래닛 멜로우 4종 비건 LHA 화장품(폼/토너/에센스/크림)">
+                                <p>메리플래닛 멜로우 4종 비건 LHA 화장품(폼/토너/에센스/크림)</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- insta -->
+            <section class="section-insta">
+                <div class="container">
+                    <div class="sec_title">
+                        <h2>Instagram</h2>
+                        <b>@merryplanet_official</b>
+                    </div>
+                    <div class="content">
+                        <div class="cont cont1">
+                            <a href="#">
+                                <img src="/img/insta01.jpg" alt="인스타1">
+                            </a>
+                        </div>
+                        <div class="cont cont2">
+                            <a href="#">
+                                <img src="/img/insta02.jpg" alt="인스타2">
+                            </a>
+                        </div>
+                        <div class="cont cont3">
+                            <a href="#">
+                                <img src="/img/insta03.jpg" alt="인스타3">
+                            </a>
+                        </div>
+                        <div class="cont cont4">
+                            <a href="#">
+                                <img src="/img/insta04.jpg" alt="인스타4">
+                            </a>
+                        </div>
+                        <div class="cont cont5">
+                            <a href="#">
+                                <img src="/img/insta05.jpg" alt="인스타5">
+                            </a>
+                        </div>
+                        <div class="cont cont6">
+                            <a href="#">
+                                <img src="/img/insta06.jpg" alt="인스타6">
+                            </a>
+                        </div>
+                        <div class="cont cont7">
+                            <a href="#">
+                                <img src="/img/insta07.jpg" alt="인스타7">
+                            </a>
+                        </div>
+                        <div class="cont cont8">
+                            <a href="#">
+                                <img src="/img/insta08.jpg" alt="인스타8">
+                            </a>
+                        </div>
+                        <div class="cont cont9">
+                            <a href="#">
+                                <img src="/img/insta09.jpg" alt="인스타9">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="progress_bar" style="background-size: 11.1111% 100%;"></div>
+                </div>
+            </section>
+        </main>
+        <!-- 푸터 -->
+        <footer>
+            <div class="container">
+                <ul class="fnb">
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">이용안내</a></li>
+                    <li><a href="#">이용약관</a></li>
+                </ul>
+                <div class="f_info">
+                    <p>
+                        CALL CENTER : 070-5030-3547 , 10:00~18:00 [lunch time 12:30~13:30] 주말 및 공휴일은 휴무입니다.<br>
+                        BANK INFO : 국민은행 989801-00-024777 , 주식회사 파파웍스<br>
+                        COMPANY : (주)파파웍스 OWNER : 이종성<br>
+                        ADDRESS : 경기도 남양주시 순화궁로 272 (별내동) 동광비즈타워별내 810호<br>
+                        BUSINESS LICENSE : 678-86-00471 [사업자정보확인] MAIL ORDER LICENSE : 제 2021-별내-0495호<br>
+                        PERSON IN CHARGE OF PERSONAL INFORMATION : 이종성, ljsljser@papaworks.co.kr
+                    </p>
+                    <p class="copyright">Copyright 2022. merryplanet All rights reserved.</p>
+                </div>
+                <a class="sns" href="https://www.instagram.com/merryplanet_official/" target="_blank">
+                    <img src="/img/instagram.png" alt="인스타그램이동">
+                </a>
+            </div>
+        </footer>
+        <!-- 버튼 -->
+        <div class="btn_wrap">
+            <button type="button" class="search_btn">
+                <img src="/img/search.png" alt="검색">
+            </button>
+            <button type="button" class="top_btn" aria-label="스크롤 탑"></button>
+        </div>
+    </div>
+    <!-- 스크립트 -->
+    <script src="/js/script.js"></script>
+</body>
+</html>

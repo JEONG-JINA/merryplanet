@@ -1,0 +1,446 @@
+@media screen and (min-width: 530px) {
+    /** brand **/
+    .section-brand .content {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .section-brand .cont img {
+        width: 40%;
+        margin: 0;
+    }
+
+    .section-brand .cont {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        flex-wrap: wrap;
+    }
+
+    .section-brand .cont2 {
+        flex-direction: row-reverse;
+    }
+
+
+    /** insta **/
+    .section-insta .content .cont {
+        width: 150px;
+    }
+}
+
+
+
+@media screen and (min-width: 700px) {
+    html {font-size: 65%;}
+
+    section {padding: 7rem 0;}
+    section .content {margin-top: 4rem;}
+
+
+    /** 헤더 **/
+    header {
+        height: 80px;
+    }
+
+    header .logo {
+        width: 180px;
+    }
+
+
+    /** 메뉴 **/
+    nav .gnb li > a {
+        font-size: 2.6rem;
+    }
+
+
+    /** product **/
+    .section-product .content .product_image {
+        height: 240px;
+    }
+
+    .section-product .content .product_txt {
+        padding: 18px 15px;
+    }
+
+
+    /** special **/
+    .section-special .content .cont > img {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+
+    /** review **/
+    .section-review .content .cont {
+        margin: 0 1rem;
+    }
+
+
+    /** 푸터 **/
+    footer .sns {
+        bottom: calc(100% - 25px);
+    }
+    
+    footer .sns img {
+        width: 25px;
+    }
+}
+
+
+
+@media screen and (min-width: 900px) {
+    /** nav **/
+    nav .ps_nav {
+        width: 80%;
+    }
+
+
+    /** 메인 **/
+    .main-visual .vd video.pc {
+        display: block;
+    }
+
+    .main-visual .vd video.mo {
+        display: none;
+    }
+
+    .main-visual .txt {
+        display: none;
+    }
+
+
+    /** brand **/
+    .section-brand .cont .brand_txt {
+        padding-bottom: 50px;
+    }
+
+    .section-brand .cont .brand_txt h3 {
+        font-size: 50px;
+        margin-bottom: 18px;
+    }
+
+    .section-brand .cont .brand_txt p {
+        font-size: 18px;
+    }
+
+
+    /** product **/
+    .section-product .content .cont {
+        width: 23.5%;
+        padding: 0;
+    }
+
+    .section-product .content .product_image {
+        height: 200px;
+    }
+
+    .section-product .content .product_image img {
+        transform: scale(1.2);
+    }
+
+
+    /** special **/
+    .section-special .content .cont {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .section-special .content .special_txt {
+        width: 45%;
+        padding: 0 0 0 10px;
+    }
+
+    .section-special .content .cont > img {
+        width: 55%;
+    }
+
+    .section-special .content .slick-custom-dots {
+        justify-content: flex-start;
+        margin: 0;
+    }
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    .sec_title h2 {
+        font-size: 2.8rem;
+    }
+
+
+    /** 헤더 **/
+    header .ps_nav {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        right: 80px;
+        transform: translateY(-50%);
+    }
+
+    header .ps_nav {
+        display: flex;
+        align-items: center;
+    }
+
+    header .ps_nav li:not(:last-child) {
+        margin-right: 25px;
+    }
+
+    header .ps_nav li img {
+        width: 20px;
+    }
+
+
+    /* 메뉴 */
+    nav::before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: rgba(0, 0, 0, 0.1);
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+    }
+
+    nav .gnb {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    nav .gnb * {
+        transition: 0.3s;
+    }
+
+    nav .gnb > li {
+        margin-bottom: 0 !important;
+        transform: scale(1);
+    }
+
+    nav .gnb > li:hover {
+        transform: scale(1.1);
+    }
+
+    nav .gnb > li::before {
+        content: "";
+        display: block;
+        width: 0;
+        height: 10px;
+        background-color: #BFD8B8;
+        position: absolute;
+        bottom: 2px;
+        left: 0;
+        transition: 0.3s;
+    }
+
+    nav .gnb > li:hover::before {
+        width: 100%;
+    }
+
+    nav .gnb > li > a {
+        color: transparent;
+        -webkit-text-stroke: 1px #5e7157;
+        font-size: 3rem;
+        letter-spacing: 1px;
+    }
+
+    nav .gnb li:hover > a {
+        color: #5e7157;
+    }
+
+    nav .ps_nav {
+        display: none;
+    }
+
+
+    /** brand **/
+    .section-brand .content {
+        column-gap: 20px;
+        row-gap: 8rem;
+    }
+
+    .section-brand .content .cont {
+        width: calc(50% - 10px);
+        justify-content: flex-start;
+    }
+
+    .section-brand .content .cont2 {
+        flex-direction: row;
+    }
+
+    .section-brand .cont img {
+        width: 35%;
+    }
+
+    .section-brand .cont .brand_txt {
+        padding: 0 0 0 2rem;
+        text-align: left;
+    }
+
+    .section-brand .cont .brand_txt h3 {
+        font-size: 2.8rem;
+        margin-bottom: 1.2rem;
+    }
+    
+    .section-brand .cont .brand_txt p {
+        font-size: 1.4rem;
+    }
+
+
+    /** product **/
+    .section-product .tag li {
+        font-size: 1.4rem;
+    }
+
+    .section-product .content .cont {
+        transition: 0.4s;
+    }
+
+    .section-product .content .cont:hover {
+        box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.1);
+        transform: translateY(-10px);
+    }
+
+    .section-product .content .product_image img {
+        transform: scale(1);
+        transition: 0.4s;
+    }
+
+    .section-product .content .cont:hover .product_image img:first-child {
+        opacity: 0;
+    }
+
+    .section-product .content .cont:hover .product_image img:last-child {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+
+    .section-product .content .product_txt h3 {
+        font-size: 1.7rem;
+    }
+
+
+    /** special **/
+    .section-special .content .slick-dots {
+        margin: 10px 0 0;
+        justify-content: flex-start;
+    }
+
+    .section-special .content .slick-custom-dots > li {
+        width: 30px;
+        height: 30px;
+    }
+
+    .section-special .content .slick-custom-dots > li button {
+        width: 8px;
+        height: 8px;
+    }
+
+
+    /** insta **/
+    .section-insta .content .cont {
+        width: 180px;
+    }
+
+    .section-insta .progress_bar {
+        margin-top: 2.5rem;
+    }
+
+
+    /** 버튼 **/
+    .btn_wrap .search_btn {
+        display: none;
+    }
+}
+
+
+
+@media screen and (min-width: 1200px) {
+    html {font-size: 68%;}
+
+
+    /** nav **/
+    nav .gnb > li > a {
+        font-size: 3.5rem;
+    }
+
+
+    /** brand **/
+    .section-brand .cont img {
+        width: 40%;
+    }
+
+    .section-brand .cont .brand_txt {
+        padding: 0 0 0 3rem;
+    }
+
+    .section-brand .cont .brand_txt p {
+        line-height: 1.5;
+        font-size: 1.5rem;
+    }
+
+
+    /** product **/
+    .section-product .content .product_image {
+        height: 240px;
+    }
+
+
+    /** special **/
+    .section-special .content .special_txt {
+        height: 350px;
+    }
+
+    .section-special .content .special_txt h3 {
+        font-size: 2.8rem;
+    }
+
+    .section-special .content .special_txt h3 > span {
+        font-size: 1.8rem;
+    }
+
+    .section-special .content .special_txt h3::after {
+        margin: 30px 0;
+    }
+
+    .section-special .content .special_txt p {
+        font-size: 1.6rem;
+    }
+
+    .section-special .content .special_txt .btn {
+        margin-top: 40px;
+        width: 150px;
+        height: 50px;
+    }
+
+    .section-special .content .special_txt .btn span {
+        line-height: 3.5;
+    }
+
+
+    /** review **/
+    .section-review .content .cont {
+        margin: 0 1.5rem;
+    }
+
+    .section-review .content .thumbnail {
+        height: 200px;
+    }
+
+    .section-review .content .txt {
+        padding: 1.6rem 2px;
+    }
+
+    .section-review .content .prd {
+        padding-top: 1.6rem;
+    }
+}
