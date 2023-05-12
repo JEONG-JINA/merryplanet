@@ -1,0 +1,121 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Pretendard', sans-serif;
+    font-size: 1.6rem;
+}
+
+::selection {
+    text-shadow: none;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.clear::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+body.on {
+    overflow: hidden;
+}
+
+.on header.fixed {
+    background-color: transparent;
+    border: none;
+}
+
+.on nav {
+    display: block;
+}
+
+:root {
+    --main-color: #92b189;
+    --title-color: #404e3c;
+    --dark: #414a43;
+    --grey: #979797;
+    --lightGrey: #dedede;
+}
+
+
+/** section **/
+.inner {
+    width: 90%;
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+section {
+    padding: 5rem 0;
+}
+
+section .content {
+    margin-top: 3.5rem;
+}
+
+.sec_title {
+    text-align: center;
+}
+
+.sec_title h2 {
+    font-family: 'Unbounded', cursive;
+    color: var(--title-color);
+    font-size: 2.7rem;
+    font-weight: 500;
+}
+
+h3 {
+    color: var(--dark);
+}
+
+p {
+    color: var(--grey);
+    line-height: 1.6;
+    letter-spacing: -0.3px;
+}
+
+b {
+    color: var(--main-color);
+}
+
+
+/** slick **/
+.slick-slider {
+    margin-bottom: 0 !important;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+
+@media screen and (min-width: 700px) {
+    html {
+        font-size: 65%;
+    }
+
+    section {
+        padding: 7rem 0;
+    }
+
+    section .content {
+        margin-top: 4rem;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .sec_title h2 {
+        font-size: 2.8rem;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    html {
+        font-size: 68%;
+    }
+}
