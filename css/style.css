@@ -321,7 +321,7 @@ nav .ps_nav li a {
 }
 
 .section-brand .cont .brand_txt b {
-    font-weight: 600;
+    font-weight: 700;
 }
 
 
@@ -427,7 +427,7 @@ nav .ps_nav li a {
 .section-special .content .special_txt h3 > span {
     font-size: 1.7rem;
     color: #95a298;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .section-special .content .special_txt h3::after {
@@ -596,10 +596,10 @@ nav .ps_nav li a {
 
 /** insta **/
 .section-insta .sec_title b {
-    margin-top: 1rem;
+    margin-top: 1.2rem;
     display: inline-block;
     font-size: 1.4rem;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .section-insta .content .cont {
