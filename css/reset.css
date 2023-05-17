@@ -8,6 +8,7 @@
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 span,
@@ -26,6 +27,7 @@ input,
 select {
     font-family: inherit;
     font-size: inherit;
+    border-radius: 0;
 }
 
 select option {
