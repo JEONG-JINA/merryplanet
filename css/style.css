@@ -134,7 +134,7 @@ nav .gnb > li:not(:last-child) {
 }
 
 nav .gnb li > a {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 800;
     color: #5e7157;
 }
@@ -441,6 +441,7 @@ nav .ps_nav li a {
 
 .section-special .content .special_txt p {
     font-size: 1.4rem;
+    line-height: 1.7;
 }
 
 .section-special .content .special_txt b {
@@ -763,12 +764,6 @@ footer .sns img {
     }
 
 
-    /** 메뉴 **/
-    nav .gnb li > a {
-        font-size: 2.6rem;
-    }
-
-
     /** product **/
     .section-product .content .product_image {
         height: 240px;
@@ -960,7 +955,6 @@ footer .sns img {
     nav .gnb > li > a {
         color: transparent;
         -webkit-text-stroke: 1px #5e7157;
-        font-size: 3rem;
         letter-spacing: 1px;
     }
 
