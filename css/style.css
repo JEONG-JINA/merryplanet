@@ -142,11 +142,11 @@ nav .gnb li > a {
 nav .ps_nav {
     border-top: 1px solid #5e7157;
     width: 90%;
-    margin: 4rem auto 0;
+    margin: 6rem auto 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 4rem;
+    padding-top: 6rem;
 }
 
 nav .ps_nav li {
@@ -440,7 +440,7 @@ nav .ps_nav li a {
 }
 
 .section-special .content .special_txt p {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 .section-special .content .special_txt b {
