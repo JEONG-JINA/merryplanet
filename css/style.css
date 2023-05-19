@@ -200,10 +200,6 @@ nav .ps_nav li a {
     object-fit: cover;
 }
 
-.main-visual .vd video.pc {
-    display: none;
-}
-
 .main-visual .txt {
     width: 100%;
     position: absolute;
@@ -805,21 +801,7 @@ footer .sns img {
         width: 80%;
     }
 
-
-    /** 메인 **/
-    .main-visual .vd video.pc {
-        display: block;
-    }
-
-    .main-visual .vd video.mo {
-        display: none;
-    }
-
-    .main-visual .txt {
-        display: none;
-    }
-
-
+    
     /** brand **/
     .section-brand .cont .brand_txt {
         padding-bottom: 50px;
