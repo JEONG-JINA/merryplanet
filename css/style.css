@@ -23,7 +23,11 @@ header .logo {
     z-index: 900;
 }
 
-header img.color {
+header .logo img {
+    width: 100%;
+}
+
+header .logo img.color {
     display: none;
 }
 
