@@ -494,7 +494,6 @@ header .menu ._my li .txt {
 .section-special .content .slick-custom-dots > li {
     width: 26px;
     height: 26px;
-    border: 1px solid var(--lightGrey);
     border-radius: 50%;
     margin: 0 7px;
     cursor: pointer;
@@ -896,27 +895,31 @@ footer .sns img {
     }
 
     header ._my .mypage .icon {
-        background-color: url('/merryplanet/img/user_white.png');
+        background-image: url('/merryplanet/img/user_white.png');
     }
 
     header ._my .order .icon {
-        background-color: url('/merryplanet/img/order_white.png');
+        background-image: url('/merryplanet/img/order_white.png');
     }
 
 
     header.fixed ._my .mypage .icon,
     header.color-change ._my .mypage .icon {
-        background-color: url('/merryplanet/img/user.png');
+        background-image: url('/merryplanet/img/user.png');
     }
 
     header.fixed ._my .order .icon,
     header.color-change ._my .order .icon {
-        background-color: url('/merryplanet/img/order.png');
+        background-image: url('/merryplanet/img/order.png');
+    }
+
+    header .menu .gnb {
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
     }
 
     header .menu .gnb > ul {
-        width: 90%;
-        margin: 0 auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
