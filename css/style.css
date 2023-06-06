@@ -30,10 +30,6 @@ header .logo img {
     width: 100%;
 }
 
-header .my_menu {
-    display: none;
-}
-
 header .ham-btn {
     width: 30px;
     height: 30px;
@@ -75,6 +71,11 @@ header .ham-btn.on .bar3 {
 }
 
 
+.on header.fixed {
+    background-color: transparent;
+    border: none;
+}
+
 header.fixed {
     background-color: rgba(255, 255, 255, 0.9);
     border-bottom: 1px solid var(--lightGrey);
@@ -102,9 +103,11 @@ header.color-change img.white {
 }
 
 
+.on .menu {
+    display: block;
+}
 
-/** 메뉴 **/
-nav {
+.menu {
     width: 100%;
     height: 100vh;
     background-image: linear-gradient(#fff, #BFD8B8);
@@ -119,37 +122,37 @@ nav {
     box-sizing: border-box;
 }
 
-nav .gnb {
+.menu .gnb > ul {
     text-align: center;
 }
 
-nav .gnb > li {
+.menu .gnb > ul > li {
     overflow: hidden;
 }
 
-nav .gnb > li:not(:last-child) {
+.menu .gnb > ul > li:not(:last-child) {
     margin-bottom: 4rem;
 }
 
-nav .gnb li > a {
+.menu .gnb > ul li > a {
     font-size: 3rem;
     font-weight: 800;
     color: #5e7157;
 }
 
-nav .my_menu {
+.menu ._my {
     margin-top: 6rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-nav .my_menu li {
+.menu ._my li {
     display: flex;
     align-items: center;
 }
 
-nav .my_menu li:not(:last-child)::after {
+.menu ._my li:not(:last-child)::after {
     content: '';
     display: block;
     width: 1px;
@@ -158,7 +161,11 @@ nav .my_menu li:not(:last-child)::after {
     margin: 0 1.5rem;
 }
 
-nav .my_menu li a {
+.menu ._my li .icon {
+    display: none;
+}
+
+.menu ._my li .txt {
     font-size: 1.3rem;
     color: #5e7157;
     font-weight: 500;
@@ -689,12 +696,17 @@ footer .sns img {
     margin-bottom: 10px;
 }
 
-.btn_wrap .search_btn img {
+.btn_wrap .search_btn span {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 20px;
+    height: 20px;
+    background-image: url('/merryplanet/img/search.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
 }
 
 .btn_wrap .top_btn::before {
@@ -847,31 +859,66 @@ footer .sns img {
 
 @media screen and (min-width: 1024px) {
     /** 헤더 **/
-    header .my_menu {
-        display: flex;
-        align-items: center;
+    header .ham-btn:hover .bar1,
+    header .ham-btn:hover .bar3 {
+        width: 90%;
+        transform-origin: left;
+    }
+
+    header .ham-btn:hover .bar2 {
+        width: 90%;
+        transform-origin: right;
+    }
+
+    header ._my {
+        justify-content: flex-start;
+        margin-top: 0;
         position: absolute;
         top: 50%;
         right: 80px;
         transform: translateY(-50%);
     }
 
-    header .my_menu {
-        display: flex;
-        align-items: center;
+    header ._my li {
+        display: block;
     }
 
-    header .my_menu li:not(:last-child) {
+    header ._my li:not(:last-child) {
         margin-right: 25px;
     }
 
-    header .my_menu li img {
+    header ._my li:not(:last-child)::after {
+        display: none;
+    }
+
+    header ._my li .icon {
         width: 20px;
+        height: 20px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    header ._my .mypage .icon {
+        background-color: url('/img/user_white.png');
+    }
+
+    header ._my .order .icon {
+        background-color: url('/img/order_white.png');
+    }
+
+    header.fixed ._my .mypage .icon,
+    header.color-change ._my .mypage .icon {
+        background-color: url('/img/user.png');
+    }
+
+    header.fixed ._my .order .icon,
+    header.color-change ._my .order .icon {
+        background-color: url('/img/order.png');
     }
 
 
-    /* 메뉴 */
-    nav::before {
+    .menu::before {
         content: '';
         display: block;
         width: 100%;
@@ -883,7 +930,7 @@ footer .sns img {
         transform: translateY(-50%);
     }
 
-    nav .gnb {
+    .menu .gnb > ul {
         width: 90%;
         margin: 0 auto;
         display: flex;
@@ -895,20 +942,20 @@ footer .sns img {
         transform: translate(-50%, -50%);
     }
 
-    nav .gnb * {
+    .menu .gnb > ul * {
         transition: 0.3s;
     }
 
-    nav .gnb > li {
+    .menu .gnb > ul > li {
         margin-bottom: 0 !important;
         transform: scale(1);
     }
 
-    nav .gnb > li:hover {
+    .menu .gnb > ul > li:hover {
         transform: scale(1.1);
     }
 
-    nav .gnb > li::before {
+    .menu .gnb > ul > li::before {
         content: '';
         display: block;
         width: 0;
@@ -920,22 +967,18 @@ footer .sns img {
         transition: 0.3s;
     }
 
-    nav .gnb > li:hover::before {
+    .menu .gnb > ul > li:hover::before {
         width: 100%;
     }
 
-    nav .gnb > li > a {
+    .menu .gnb > ul > li > a {
         color: transparent;
         -webkit-text-stroke: 1px #5e7157;
         letter-spacing: 1px;
     }
 
-    nav .gnb li:hover > a {
+    .menu .gnb > ul li:hover > a {
         color: #5e7157;
-    }
-
-    nav .my_menu {
-        display: none;
     }
 
 
@@ -1027,19 +1070,13 @@ footer .sns img {
     .section-insta .progress_bar {
         margin-top: 2.5rem;
     }
-
-
-    /** 버튼 **/
-    .btn_wrap .search_btn {
-        display: none;
-    }
 }
 
 
 
 @media screen and (min-width: 1200px) {
-    /** nav **/
-    nav .gnb > li > a {
+    /** header **/
+    .menu .gnb > ul > li > a {
         font-size: 3.5rem;
     }
 

@@ -22,17 +22,17 @@ body {
     clear: both;
 }
 
+.blind {
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+
 body.on {
     overflow: hidden;
-}
-
-.on header.fixed {
-    background-color: transparent;
-    border: none;
-}
-
-.on nav {
-    display: block;
 }
 
 :root {

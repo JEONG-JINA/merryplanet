@@ -30,70 +30,55 @@
                 <h1 class="logo">
                     <a href="/merryplanet/index.html">
                         <img src="/merryplanet/img/logo_merryplanet_200.png" alt="메리플래닛 로고" class="color">
-                        <img src="/merryplanet/img/logo_white.png" alt="메리플래닛 화이트 로고" class="white">
+                        <img src="/merryplanet/img/logo_white.png" alt="메리플래닛 로고" class="white">
                     </a>
                 </h1>
-                <ul class="my_menu">
-                    <li>
-                        <a href="#">
-                            <img src="/merryplanet/img/search.png" alt="검색" class="color">
-                            <img src="/merryplanet/img/search_white.png" alt="검색" class="white">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="/merryplanet/img/user.png" alt="마이페이지" class="color">
-                            <img src="/merryplanet/img/user_white.png" alt="마이페이지" class="white">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="/merryplanet/img/order.png" alt="주문내역" class="color">
-                            <img src="/merryplanet/img/order_white.png" alt="주문내역" class="white">
-                        </a>
-                    </li>
-                </ul>
-                <button type="button" class="ham-btn" aria-label="메뉴">
+                <button type="button" class="ham-btn" title="메뉴 열기/닫기" aria-label="메뉴 열기/닫기">
                     <span class="bar bar1"></span>
                     <span class="bar bar2"></span>
                     <span class="bar bar3"></span>
                 </button>
+                <div class="menu">
+                    <nav class="gnb">
+                        <h2 class="blind">메뉴</h2>
+                        <ul>
+                            <li>
+                                <a href="#">BRAND</a>
+                            </li>
+                            <li>
+                                <a href="#">PRODUCT</a>
+                            </li>
+                            <li>
+                                <a href="#">EVENT</a>
+                            </li>
+                            <li>
+                                <a href="#">REVIEW</a>
+                            </li>
+                            <li>
+                                <a href="#">NOTICE</a>
+                            </li>
+                            <li>
+                                <a href="#">Q&A</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <ul class="_my">
+                        <li class="mypage">
+                            <a href="#">
+                                <div class="icon"></div>
+                                <span class="txt">마이페이지</span>
+                            </a>
+                        </li>
+                        <li class="order">
+                            <a href="#">
+                                <div class="icon"></div>
+                                <span class="txt">주문내역</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </header>
-        <!-- 메뉴 -->
-        <nav>
-            <ul class="gnb">
-                <li>
-                    <a href="#">BRAND</a>
-                </li>
-                <li>
-                    <a href="#">PRODUCT</a>
-                </li>
-                <li>
-                    <a href="#">EVENT</a>
-                </li>
-                <li>
-                    <a href="#">REVIEW</a>
-                </li>
-                <li>
-                    <a href="#">NOTICE</a>
-                </li>
-                <li>
-                    <a href="#">Q&A</a>
-                </li>
-            </ul>
-            <ul class="my_menu">
-                <li>
-                    <a href="#">로그인</a>
-                </li>
-                <li>
-                    <a href="#">마이페이지</a>
-                </li>
-                <li>
-                    <a href="#">주문내역</a>
-                </li>
-            </ul>
-        </nav>
         <main id="contents">
             <!-- 메인 -->
             <section class="main-visual">
@@ -453,10 +438,10 @@
         </footer>
         <!-- 버튼 -->
         <aside class="btn_wrap">
-            <button type="button" class="search_btn">
-                <img src="/merryplanet/img/search.png" alt="검색">
+            <button type="button" class="search_btn" title="검색" aria-label="검색">
+                <span></span>
             </button>
-            <button type="button" class="top_btn" aria-label="스크롤 탑"></button>
+            <button type="button" class="top_btn" title="맨위로 이동" aria-label="맨위로 이동"></button>
         </aside>
     </div>
     <!-- 스크립트 -->

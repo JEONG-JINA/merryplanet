@@ -22,6 +22,42 @@ jQuery(document).ready(function(){
         $("body").toggleClass("on");
         $("header").toggleClass("color-change");
     });
+
+    if( $("header .ham-btn").hasClass("on") ) {
+        $("header .ham-btn").insertAfter("header .menu");
+    }else {
+        $("header .ham-btn").insertBefore("header .menu");
+    };
+
+
+    // 반응형
+    var win_w = $(window).outerWidth();
+
+    if( win_w > 1023 ) {
+        pc();
+    }else {
+        mobile();
+    };
+
+    $(window).resize(function(){
+        var win_w = $(window).outerWidth();
+        
+        if( win_w > 1023 ) {
+            pc();
+        }else {
+            mobile();
+        };
+    });
+
+    function pc() {
+        $("header ._my").inserAfter("header .logo");
+        $("header _my li .txt").addClass(".blind");
+    }
+
+    function mobile() {
+        $("header ._my").inserAfter("header .menu .gnb");
+        $("header _my li .txt").removeClass(".blind");
+    }
     
 
     // special
