@@ -8,7 +8,7 @@ jQuery(document).ready(function(){
     $(window).scroll(function(){
         var scr_top = $(window).scrollTop();
         
-        if( scr_top > 10 ) {
+        if(scr_top > 10) {
             $("header").addClass("fixed");
         }
         else {
@@ -22,7 +22,7 @@ jQuery(document).ready(function(){
         $("body").toggleClass("on");
         $("header").toggleClass("color-change");
 
-        if( $("header .ham-btn.on").length ) {
+        if($("header .ham-btn.on").length) {
             $("header .ham-btn").insertAfter("header .menu");
         }else {
             $("header .ham-btn").insertBefore("header .menu");
@@ -33,7 +33,7 @@ jQuery(document).ready(function(){
     // 반응형
     var win_w = $(window).outerWidth();
 
-    if( win_w > 1023 ) {
+    if(win_w > 1023) {
         pc();
     }else {
         mobile();
@@ -42,7 +42,7 @@ jQuery(document).ready(function(){
     $(window).resize(function(){
         var win_w = $(window).outerWidth();
 
-        if( win_w > 1023 ) {
+        if(win_w > 1023) {
             pc();
         }else {
             mobile();
@@ -124,7 +124,7 @@ jQuery(document).ready(function(){
     function move_top(){
         var scr_top = $(window).scrollTop();
 
-        if( scr_top > 300) {
+        if(scr_top > 300) {
             $(".btn_wrap").stop().fadeIn();
         }
         else {
