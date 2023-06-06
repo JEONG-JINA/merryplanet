@@ -21,13 +21,13 @@ jQuery(document).ready(function(){
         $(this).toggleClass("on");
         $("body").toggleClass("on");
         $("header").toggleClass("color-change");
-    });
 
-    if( $("header .ham-btn.on").length ) {
-        $("header .ham-btn").insertAfter("header .menu");
-    }else {
-        $("header .ham-btn").insertBefore("header .menu");
-    };
+        if( $("header .ham-btn.on").length ) {
+            $("header .ham-btn").insertAfter("header .menu");
+        }else {
+            $("header .ham-btn").insertBefore("header .menu");
+        };
+    });
 
 
     // 반응형
