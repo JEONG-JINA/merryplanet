@@ -117,7 +117,7 @@ header.color-change img.white {
     display: none;
     -webkit-overflow-scrolling: touch;
     overflow-y: scroll;
-    z-index: 500;
+    z-index: 100;
     padding: 10rem 0;
     box-sizing: border-box;
 }
@@ -892,6 +892,7 @@ footer .sns img {
     }
 
     header ._my li .icon {
+        display: block;
         width: 20px;
         height: 20px;
         background-repeat: no-repeat;
