@@ -41,7 +41,7 @@ jQuery(document).ready(function(){
 
     $(window).resize(function(){
         var win_w = $(window).outerWidth();
-        
+
         if( win_w > 1023 ) {
             pc();
         }else {
@@ -50,12 +50,12 @@ jQuery(document).ready(function(){
     });
 
     function pc() {
-        $("header ._my").inserAfter("header .logo");
+        $("header ._my").insertAfter("header .logo");
         $("header _my li .txt").addClass(".blind");
     }
 
     function mobile() {
-        $("header ._my").inserAfter("header .menu .gnb");
+        $("header ._my").insertAfter("header .menu .gnb");
         $("header _my li .txt").removeClass(".blind");
     }
     

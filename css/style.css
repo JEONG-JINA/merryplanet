@@ -18,16 +18,13 @@ header .inner {
     align-items: center;
 }
 
-header img.color {
-    display: none;
-}
-
 header .logo {
     width: 160px;
+    z-index: 900;
 }
 
-header .logo img {
-    width: 100%;
+header img.color {
+    display: none;
 }
 
 header .ham-btn {
@@ -48,6 +45,11 @@ header .ham-btn .bar {
 
 header .ham-btn .bar1 {
     transform: translate(0, -9px);
+}
+
+header .ham-btn .bar2 {
+    left: unset;
+    right: 0;
 }
 
 header .ham-btn .bar3 {
@@ -859,15 +861,8 @@ footer .sns img {
 
 @media screen and (min-width: 1024px) {
     /** 헤더 **/
-    header .ham-btn:hover .bar1,
-    header .ham-btn:hover .bar3 {
-        width: 90%;
-        transform-origin: left;
-    }
-
-    header .ham-btn:hover .bar2 {
-        width: 90%;
-        transform-origin: right;
+    header .ham-btn:hover .bar {
+        width: 80%;
     }
 
     header ._my {
@@ -877,6 +872,7 @@ footer .sns img {
         top: 50%;
         right: 80px;
         transform: translateY(-50%);
+        z-index: 900;
     }
 
     header ._my li {
