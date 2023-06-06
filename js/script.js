@@ -51,12 +51,12 @@ jQuery(document).ready(function(){
 
     function pc() {
         $("header ._my").insertAfter("header .logo");
-        $("header _my li .txt").addClass(".blind");
+        $("header _my li .txt").addClass("blind");
     }
 
     function mobile() {
         $("header ._my").insertAfter("header .menu .gnb");
-        $("header _my li .txt").removeClass(".blind");
+        $("header _my li .txt").removeClass("blind");
     }
     
 
