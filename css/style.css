@@ -109,11 +109,11 @@ header.color-change img.white {
 }
 
 
-.on .menu {
+.on header .menu {
     display: block;
 }
 
-.menu {
+header .menu {
     width: 100%;
     height: 100vh;
     background-image: linear-gradient(#fff, #BFD8B8);
@@ -128,37 +128,37 @@ header.color-change img.white {
     box-sizing: border-box;
 }
 
-.menu .gnb > ul {
+header .menu .gnb > ul {
     text-align: center;
 }
 
-.menu .gnb > ul > li {
+header .menu .gnb > ul > li {
     overflow: hidden;
 }
 
-.menu .gnb > ul > li:not(:last-child) {
+header .menu .gnb > ul > li:not(:last-child) {
     margin-bottom: 4rem;
 }
 
-.menu .gnb > ul li > a {
+header .menu .gnb > ul li > a {
     font-size: 3rem;
     font-weight: 800;
     color: #5e7157;
 }
 
-.menu ._my {
+header .menu ._my {
     margin-top: 6rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.menu ._my li {
+header .menu ._my li {
     display: flex;
     align-items: center;
 }
 
-.menu ._my li:not(:last-child)::after {
+header .menu ._my li:not(:last-child)::after {
     content: '';
     display: block;
     width: 1px;
@@ -167,11 +167,11 @@ header.color-change img.white {
     margin: 0 1.5rem;
 }
 
-.menu ._my li .icon {
+header .menu ._my li .icon {
     display: none;
 }
 
-.menu ._my li .txt {
+header .menu ._my li .txt {
     font-size: 1.3rem;
     color: #5e7157;
     font-weight: 500;
@@ -870,8 +870,8 @@ footer .sns img {
     }
 
     header ._my {
-        justify-content: flex-start;
-        margin-top: 0;
+        display: flex;
+        align-items: center;
         position: absolute;
         top: 50%;
         right: 80px;
@@ -887,51 +887,34 @@ footer .sns img {
         margin-right: 25px;
     }
 
-    header ._my li:not(:last-child)::after {
-        display: none;
-    }
-
     header ._my li .icon {
-        display: block;
-        width: 20px;
-        height: 20px;
+        width: 30px;
+        height: 30px;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
     }
 
     header ._my .mypage .icon {
-        background-color: url('/img/user_white.png');
+        background-color: url('/merryplanet/img/user_white.png');
     }
 
     header ._my .order .icon {
-        background-color: url('/img/order_white.png');
+        background-color: url('/merryplanet/img/order_white.png');
     }
+
 
     header.fixed ._my .mypage .icon,
     header.color-change ._my .mypage .icon {
-        background-color: url('/img/user.png');
+        background-color: url('/merryplanet/img/user.png');
     }
 
     header.fixed ._my .order .icon,
     header.color-change ._my .order .icon {
-        background-color: url('/img/order.png');
+        background-color: url('/merryplanet/img/order.png');
     }
 
-
-    .menu::before {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 1px;
-        background-color: rgba(0, 0, 0, 0.1);
-        position: absolute;
-        top: 50%;
-        left: 0;
-        transform: translateY(-50%);
-    }
-
-    .menu .gnb > ul {
+    header .menu .gnb > ul {
         width: 90%;
         margin: 0 auto;
         display: flex;
@@ -943,20 +926,20 @@ footer .sns img {
         transform: translate(-50%, -50%);
     }
 
-    .menu .gnb > ul * {
+    header .menu .gnb > ul * {
         transition: 0.3s;
     }
 
-    .menu .gnb > ul > li {
+    header .menu .gnb > ul > li {
         margin-bottom: 0 !important;
         transform: scale(1);
     }
 
-    .menu .gnb > ul > li:hover {
+    header .menu .gnb > ul > li:hover {
         transform: scale(1.1);
     }
 
-    .menu .gnb > ul > li::before {
+    header .menu .gnb > ul > li::before {
         content: '';
         display: block;
         width: 0;
@@ -968,17 +951,17 @@ footer .sns img {
         transition: 0.3s;
     }
 
-    .menu .gnb > ul > li:hover::before {
+    header .menu .gnb > ul > li:hover::before {
         width: 100%;
     }
 
-    .menu .gnb > ul > li > a {
+    header .menu .gnb > ul > li > a {
         color: transparent;
         -webkit-text-stroke: 1px #5e7157;
         letter-spacing: 1px;
     }
 
-    .menu .gnb > ul li:hover > a {
+    header .menu .gnb > ul li:hover > a {
         color: #5e7157;
     }
 
