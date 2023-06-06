@@ -887,8 +887,8 @@ footer .sns img {
     }
 
     header ._my li .icon {
-        width: 30px;
-        height: 30px;
+        width: 20px;
+        height: 20px;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -920,6 +920,7 @@ footer .sns img {
     }
 
     header .menu .gnb > ul {
+        width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;

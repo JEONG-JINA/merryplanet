@@ -23,7 +23,7 @@ jQuery(document).ready(function(){
         $("header").toggleClass("color-change");
     });
 
-    if( $("header .ham-btn").hasClass("on") ) {
+    if( $("header .ham-btn.on").length ) {
         $("header .ham-btn").insertAfter("header .menu");
     }else {
         $("header .ham-btn").insertBefore("header .menu");
